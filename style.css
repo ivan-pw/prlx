@@ -1,0 +1,46 @@
+.prlx {
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.prlx__text {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  color: #fff;
+  padding: 20px 20px 20px 20%;
+}
+
+.prlx__image_wrapper {
+  overflow: hidden;
+}
+
+.prlx__text + p {
+  display: none;
+}
+
+.prlx__image__swipe {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  user-select: none;
+  transition: 0.5s all linear;
+}
+
+.prlx__image__swipe.active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+  .prlx__text {
+    padding-left: 20px;
+    padding-top: 10px;
+    max-width: 100%;
+    position: relative;
+    color: #333;
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+}
